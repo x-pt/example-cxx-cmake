@@ -1,0 +1,12 @@
+version: Compose specification
+
+service:
+    example-cxx:
+        build: .
+
+networks:
+    example-cxx-net:
+        name: example-cxx-net
+        ipam:
+            config:
+                -   subnet: 172.16.238.0/24
