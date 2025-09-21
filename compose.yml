@@ -1,0 +1,11 @@
+service:
+    example_cxx_cmake:
+        build: .
+        image: example-cxx-cmake
+
+networks:
+    example_cxx_cmake-net:
+        name: example_cxx_cmake-net
+        ipam:
+            config:
+                -   subnet: 172.16.238.0/24
